@@ -29,6 +29,25 @@ public class OopApp {
         System.out.println(opel);
         opel.setSpeed(160);
         System.out.println(opel);
+        opel.setSpeed(0);
+        System.out.println(opel);
+        int increasedSpeed = opel.accelerate(123);
+        System.out.println("Gyorsulás! A sebesség: " + increasedSpeed);
+        System.out.println(opel);
+        System.out.println("Elindultunk kirándulni, megtettünk x km-et. Benzin fogy!!!");
+        double amount = 50;
+        double decreaseFuel = opel.consumeFuel(amount);
+        System.out.println("Elfogyott benzin mértéke: " + amount + "maradék benzin: " + decreaseFuel);
+        System.out.println(opel);
+        System.out.println(car);
+        amount = 22.5;
+        double increaseCarFuel = car.refillGasoline(amount);
+        System.out.println("Töltöttünk benzint a car példányba ennyi litert: " + amount + " és a tank itt áll: " + increaseCarFuel);
+        amount = 11.32;
+        double increaseOpelFuel = opel.refillGasoline(amount);
+        System.out.println("Töltöttünk benzint a BMW tipusu Opelünkbe :) mennyisége: " + amount + " és a tank itt áll: " + increaseOpelFuel);
+        System.out.println(car);
+        System.out.println(opel);
     }
 
     /*
